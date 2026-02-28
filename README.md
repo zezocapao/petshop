@@ -20,5 +20,5 @@ Projeto desenvolvido por **José Victor Silveira dos Santos Tondin**, estudante 
 
 ## Como Visualizar
 O projeto está hospedado utilizando o GitHub Pages.
-Acesse o sistema online através do link: [COLE O SEU LINK DO GITHUB PAGES AQUI]
+Acesse o sistema online através do link: https://zezocapao.github.io/petshop/
  
