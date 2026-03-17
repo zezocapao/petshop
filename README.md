@@ -38,9 +38,6 @@ petshop/
 └── README.md
 ```
 
-## Publicação
-
-O projeto pode ser publicado no GitHub Pages usando a branch `main`.
 
 ## Autor
 
