@@ -1,0 +1,142 @@
+/*
+    Arquivo: style.css
+    Objetivo: estilização personalizada do projeto PetShop Cão Feliz - Fase 2.
+    O Bootstrap foi utilizado para a base visual, e este arquivo complementa
+    cores, espaçamentos, acessibilidade e responsividade.
+*/
+
+:root {
+    --cor-primaria: #0d6efd;
+    --cor-secundaria: #198754;
+    --cor-fundo: #f8f9fa;
+    --cor-texto: #212529;
+    --cor-destaque: #fff3cd;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* Acessibilidade: link para pular direto ao conteúdo */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #000;
+    color: #fff;
+    padding: 10px 14px;
+    z-index: 1000;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+.banner-img {
+    height: 460px;
+    object-fit: cover;
+    filter: brightness(0.75);
+}
+
+.banner-texto {
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.section-title h2 {
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.section-title p {
+    color: #6c757d;
+}
+
+.categoria-titulo {
+    margin: 24px 0 16px;
+    color: var(--cor-primaria);
+    font-weight: 700;
+}
+
+.produto-img {
+    height: 240px;
+    object-fit: cover;
+}
+
+.preco {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    margin-bottom: 0;
+}
+
+.servico-card {
+    border-left: 6px solid var(--cor-primaria);
+}
+
+form {
+    border: 1px solid #dee2e6;
+}
+
+fieldset {
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+legend {
+    float: none;
+    width: auto;
+    padding: 0 8px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--cor-primaria);
+}
+
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus,
+.btn:focus {
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+#resultadoAgendamento {
+    white-space: pre-line;
+}
+
+footer a:hover,
+footer a:focus {
+    text-decoration: underline;
+}
+
+/* Destaque de campos inválidos */
+.was-validated .form-control:invalid,
+.was-validated .form-select:invalid,
+.form-control.is-invalid,
+.form-select.is-invalid {
+    border-color: #dc3545;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner-img {
+        height: 300px;
+    }
+
+    .banner-texto {
+        padding: 12px;
+    }
+
+    .produto-img {
+        height: 220px;
+    }
+}
